@@ -40,42 +40,43 @@ const Navbar = () => {
 								className="absolute top-6 right-0 px-8 py-8"
 								onClick={() => setIsNavOpen(false)}
 							>
-								<CloseIcon />
+								{/* <CloseIcon /> */}
+                <img src='https://img.icons8.com/ios-glyphs/ff0000/30/delete-sign.png' alt='close' />
 							</div>
 
 							<ul className="flex flex-col items-center justify-between min-h-[250px]">
 								<Link to='/'>
-									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+									<li className=" text-red-500 hover:text-yellow-400  border-gray-400 my-8 uppercase">
 										Home
 									</li>
 								</Link>
 								<Link to='menu'>
-									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+									<li className=" text-red-500  hover:text-yellow-400 border-gray-400 my-8 uppercase">
 										Menu
 									</li>
 								</Link>
 								<Link to='about'>
-									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+									<li className=" text-red-500  hover:text-yellow-400 border-gray-400 my-8 uppercase">
 										Our Story
 									</li>
 								</Link>
 								<Link to='schedule'>
-									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+									<li className=" text-red-500  hover:text-yellow-400  border-gray-400 my-8 uppercase">
 										Find Us
 									</li>
 								</Link>
 								<Link to='catering'>
-									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+									<li className=" text-red-500  hover:text-yellow-400 border-gray-400 my-8 uppercase">
 										Catering
 									</li>
 								</Link>
 								<Link to='gallery'>
-									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+									<li className=" text-red-500  hover:text-yellow-400 border-gray-400 my-8 uppercase">
 										Gallery
 									</li>
 								</Link>
 								<Link to='contact'>
-									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+									<li className=" text-red-500  hover:text-yellow-400 border-gray-400 my-8 uppercase">
 										Contact Us
 									</li>
 								</Link>
@@ -85,25 +86,25 @@ const Navbar = () => {
 
 					<ul className="DESKTOP-MENU hidden space-x-8 lg:flex mt-12">
 						<Link to='/'>
-							<li className=" text-red-500 my-8 uppercase">Home</li>
+							<li className=" text-red-500 my-8 uppercase  hover:text-yellow-400">Home</li>
 						</Link>
 						<Link to='/menu'>
-							<li className=" text-red-500 my-8 uppercase">Menu</li>
+							<li className=" text-red-500 my-8 uppercase  hover:text-yellow-400">Menu</li>
 						</Link>
 						<Link to='/about'>
-							<li className=" text-red-500  my-8 uppercase">Our Story</li>
+							<li className=" text-red-500  my-8 uppercase  hover:text-yellow-400">Our Story</li>
 						</Link>
 						<Link to='/schedule'>
-							<li className=" text-red-500   my-8 uppercase">Find Us</li>
+							<li className=" text-red-500   my-8 uppercase  hover:text-yellow-400">Find Us</li>
 						</Link>
 						<Link to='/catering'>
-							<li className=" text-red-500  my-8 uppercase">Catering</li>
+							<li className=" text-red-500  my-8 uppercase  hover:text-yellow-400">Catering</li>
 						</Link>
 						<Link to='gallery'>
-							<li className=" text-red-500  my-8 uppercase">Gallery</li>
+							<li className=" text-red-500  my-8 uppercase  hover:text-yellow-400">Gallery</li>
 						</Link>
 						<Link to='/contact'>
-							<li className=" text-red-500   my-8 uppercase">Contact Us</li>
+							<li className=" text-red-500   my-8 uppercase  hover:text-yellow-400">Contact Us</li>
 						</Link>
 					</ul>
 				</div>
