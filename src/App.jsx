@@ -18,7 +18,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App h-[100%] bg-gradient-to-br from-green-700 to-yellow-400 relative bg-cover min-w-fit min-h-screen min-w-full">
     <Navbar />
     <main>
       <Routes>
