@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Logo2 from '../assets/logos/fullLogo-foodTruck-white.png'
+import { Link } from 'react-router-dom'
 // Icons
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
@@ -15,7 +16,7 @@ const Navbar = () => {
 	}
 	return (
 		<div className="bg-transparent w-full">
-			<div className="flex items-center justify-between p-5">
+			<div className="flex items-center justify-between p-6">
 				<div className="w-[8rem] mr-2">
 					<img src={Logo2} alt="logo" />
 				</div>
@@ -27,7 +28,11 @@ const Navbar = () => {
 							className="space-y-2"
 							onClick={() => setIsNavOpen((prev) => !prev)}
 						>
-							<MenuIcon />
+							{/* <MenuIcon className='text-red-500'/> */}
+							<img
+								src="https://img.icons8.com/ios-filled/ff0000/35/menu--v6.png"
+								alt="menu"
+							/>
 						</div>
 
 						<div className={isNavOpen ? 'showMenuNav' : 'hideMenuNav'}>
@@ -39,39 +44,67 @@ const Navbar = () => {
 							</div>
 
 							<ul className="flex flex-col items-center justify-between min-h-[250px]">
-								<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
-									Home
-								</li>
-								<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
-									Menu
-								</li>
-								<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
-									Our Story
-								</li>
-								<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
-									Find Us
-								</li>
-								<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
-									Catering
-								</li>
-								<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
-									Gallery
-								</li>
-								<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
-									Contact Us
-								</li>
+								<Link to='/'>
+									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+										Home
+									</li>
+								</Link>
+								<Link to='menu'>
+									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+										Menu
+									</li>
+								</Link>
+								<Link to='about'>
+									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+										Our Story
+									</li>
+								</Link>
+								<Link to='schedule'>
+									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+										Find Us
+									</li>
+								</Link>
+								<Link to='catering'>
+									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+										Catering
+									</li>
+								</Link>
+								<Link to='gallery'>
+									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+										Gallery
+									</li>
+								</Link>
+								<Link to='contact'>
+									<li className="border-b text-red-500  border-gray-400 my-8 uppercase">
+										Contact Us
+									</li>
+								</Link>
 							</ul>
 						</div>
 					</section>
 
 					<ul className="DESKTOP-MENU hidden space-x-8 lg:flex mt-12">
-						<li className=" text-red-500 my-8 uppercase">Home</li>
-						<li className=" text-red-500 my-8 uppercase">Menu</li>
-						<li className=" text-red-500  my-8 uppercase">Our Story</li>
-						<li className=" text-red-500   my-8 uppercase">Find Us</li>
-						<li className=" text-red-500  my-8 uppercase">Catering</li>
-						<li className=" text-red-500  my-8 uppercase">Gallery</li>
-						<li className=" text-red-500   my-8 uppercase">Contact Us</li>
+						<Link to='/'>
+							<li className=" text-red-500 my-8 uppercase">Home</li>
+						</Link>
+						<Link to='/menu'>
+							<li className=" text-red-500 my-8 uppercase">Menu</li>
+						</Link>
+						<Link to='/about'>
+							<li className=" text-red-500  my-8 uppercase">Our Story</li>
+						</Link>
+						<Link to='/schedule'>
+							<li className=" text-red-500   my-8 uppercase">Find Us</li>
+						</Link>
+						<Link to='/catering'>
+							<li className=" text-red-500  my-8 uppercase">Catering</li>
+						</Link>
+						<Link to='gallery'>
+							<li className=" text-red-500  my-8 uppercase">Gallery</li>
+						</Link>
+						<Link to='/contact'>
+							<li className=" text-red-500   my-8 uppercase">Contact Us</li>
+						</Link>
 					</ul>
 				</div>
 			</div>
