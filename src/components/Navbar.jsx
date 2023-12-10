@@ -15,8 +15,8 @@ const Navbar = () => {
 		return () => (window.onscroll = null)
 	}
 	return (
-		<div className="bg-transparent w-full">
-			<div className="flex items-center justify-between p-6">
+		<div className=" w-full">
+			<div className="flex items-center justify-between ">
 				<div className="w-[8rem] mr-2">
 					<img src={Logo2} alt="logo" />
 				</div>
