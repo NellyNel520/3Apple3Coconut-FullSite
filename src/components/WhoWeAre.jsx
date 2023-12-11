@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom'
 
 const WhoWeAre = () => {
 	return (
-		<div className="flex flex-wrap items-center justify-between mx-[8%] my-10">
+		<div className="flex flex-wrap items-center justify-between mx-[6%] my-10">
 			<div className="w-[40rem] mb-4">
 				<h1 className="text-4xl font-bold font-play tracking-tight text-red-500 sm:text-6xl">
 					Who We Are
 				</h1>
 				<p className="mt-4 text-xl text-gray-500 ">
-					This year, our new summer collection will shelter you from the harsh
-					elements of a world that doesn't care if you live or die.
+        Vibrant Jamaican food truck serving up authentic Caribbean flavors with a modern twist. 
 				</p>
 
 				<Link to='/about'>
@@ -23,7 +22,7 @@ const WhoWeAre = () => {
 			<img
 				src="https://sightbuilder.s3.us-east-1.amazonaws.com/uploads/107/1701539837667_IMG_3226.jpeg"
 				alt="truck"
-				className="w-[25rem] rounded-lg"
+				className="w-[28rem] rounded-lg"
 			/>
 		</div>
 	)
